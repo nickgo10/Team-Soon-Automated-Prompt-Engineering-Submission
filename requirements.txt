@@ -1,0 +1,11 @@
+numpy
+pandas
+requests
+transformers
+torch==2.1.2+cu118
+torchvision0.16.2+cu118
+torchaudio==2.1.2+cu118
+Flask
+json
+
+

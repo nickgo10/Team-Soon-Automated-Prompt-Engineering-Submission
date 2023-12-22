@@ -1,0 +1,57 @@
+"name": "Propmt_GA_Optimisation",
+    "short_name": "Prompt_OPT",
+    "version": "0.1",
+    "license": "MIT",
+    "author": "Team_soon",
+    "endpoints": [
+        {
+            "uri": "/get_data",
+            "input_methods": ["GET"],
+            "input_query": "",
+            "input_headers": "",
+            "output": {},
+            "documentation": "Returns the parameters of this model, along with the number of epochs computed so far.",
+            "example_calls": [
+                {
+                    "body": "",
+                    "method": "GET",
+                    "query": "",
+                    "headers": "",
+                    "output": {
+                        "epochs": 3,
+                        "params": "gASVgQAAAAAAAACMC2Nv..."
+                    }
+                }
+            ]
+        },
+        {
+            "uri": "/post_data",
+            "input_methods": ["POST"],
+            "input_body": {
+                "params": "<Base64 encoded of pickled state_dict>",
+                "segment": "<Int>",
+                "loss": "<Float>",
+                "epochs": "<Int>"
+            },
+            "input_query": "",
+            "input_headers": "",
+            "output": {},
+            "documentation": "Accepts the result of a computation on a given epoch and segment number. Params are base64 encoded from the pickled model.state_dict object.",
+            "example_calls": [
+                {
+                    "body": {
+                        "params": "gASVgQAAAAAAAACMC2Nv...",
+                        "segment": 1,
+                        "loss": 0.6894218985755133,
+                        "epochs": 3
+                    },
+                    "method": "POST",
+                    "query": "",
+                    "headers": "",
+                    "output": {
+                        "updated": true
+                    }
+                }
+            ]
+        }
+    ]
