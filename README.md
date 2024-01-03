@@ -88,15 +88,6 @@ The objective of the program is to generate then specify prompts that when provi
 
  The genetic algorithm operates on binary genotypes, performing operations such as crossover and mutation to explore the space of possible prompts. 
 
-
-No LLM Call in Example:
-
-It's important to note that in the given example, there is no direct call to the LLM. The output is the same as the prompt, and the sentiment similarity is computed based on the generated set of adjectives.
-
-In our project, we will be making a direct call to the LLM. Therefore, will be able to evaluate the fitness score / similarity of the outputs generated.
-
-To also help explain the process of genetic algorithms, here is an explanation:
-
 1. Representation of Prompts:
 
 In the context of prompt engineering, a prompt can be represented as a sequence of tokens or words.
