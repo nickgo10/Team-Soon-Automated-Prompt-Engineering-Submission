@@ -2,7 +2,9 @@
 Automated Prompt Engineering Using Mistral.ai
 
 ## Use Case:
-This project utilizes a genetic algorithm alongside a language model to process and generate optimized text prompts based on a question and answer dataset. It's 'fitness function' can be use to evaluate the accuracy & relevance of the outputs produced from generated prompts.
+This project utilizes a genetic algorithm alongside a language model to process and generate optimized text prompts based on a question and answer dataset.
+
+It's 'fitness function' can be use to evaluate the accuracy & relevance of the outputs produced from generated prompts.
 
 ### Example: 
 
@@ -45,8 +47,6 @@ POST /post_data: Accepts data and updates the server state.
 Usage
 Describe how to use the application, including example requests to the Flask server and how to interpret the responses.
 
-## Contributing
-Provide guidelines for how others can contribute to this project. Include instructions for setting up a development environment and running tests.
+### Known issues
+- The program does take a long time to execute. Due to our team members pursuing other fields, this issue remains un-optimized.
 
-## License
-Include the license information here. If your project is open-source, you might want to use licenses like MIT, GPL, or Apache. If you're unsure, you can use websites like ChooseALicense.com to find a license that suits your project.
