@@ -1,5 +1,3 @@
-Team Soon - Submission
-Description
 This project utilizes a genetic algorithm alongside a language model to process and generate optimized text prompts based on a question and answer dataset. It includes a Flask server to host the application as an API endpoint.
 
 Installation
